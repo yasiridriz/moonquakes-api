@@ -14,7 +14,7 @@ import pandas
 import csv
 
 @api_view(['GET'])
-def get_coordinates(request): 
+def get_data(request): 
     sm = pandas.read_csv('resources/nakamura_1979_sm_locations.csv')
     ai = pandas.read_csv('resources/nakamura_1983_ai_locations.csv')
     dm = pandas.read_csv('resources/nakamura_2005_dm_locations.csv')
